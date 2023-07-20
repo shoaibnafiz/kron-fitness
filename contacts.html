@@ -9,11 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Font Iawesome -->
     <script src="https://kit.fontawesome.com/a2afe6c5bb.js" crossorigin="anonymous"></script>
+    <!-- For Map -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
 
 </head>
 
 
-<body onload="getLocation()">
+<body>
 
     <img class="w-full h-1/2 object-cover absolute z-[-10] opacity-25"
         src="https://i.ibb.co/cg7qX1f/victor-freitas-Wv-DYd-XDzkhs-unsplash-1.jpg" alt="">
@@ -131,9 +139,7 @@
         <!-- Map Section -->
         <section>
 
-            <iframe id="map" class="h-[500px] w-full backdrop-brightness-25" style="filter: brightness(30%);"
-                src="https://www.google.com/maps?q=22.3397271,91.8283857&hl=es;z=14&output=embed"
-                frameborder="0"></iframe>
+            <div id="map" class="h-[500px] w-full"></div>
 
         </section>
 
@@ -248,19 +254,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            }
-        }
-        function showPosition(position) {
-            var longitude = position.coords.longitude;
-            var latitude = position.coords.latitude;
-            // var longitude = 22.3397271;
-            // var latitude = 91.8283857;
-            document.getElementById('map').src = "https://www.google.com/maps?q=" + { longitude }
-                + "," + { latitude } + "&hl=es;z=14&output=embed";
-        }
+        mapboxgl.accessToken = 'pk.eyJ1Ijoic2hvYWlibmFmaXoiLCJhIjoiY2xrYjMyNmJsMDB4MzNlcGZjZ2Z2N2F3ZyJ9.2NdOx1szJJntX5AFUWe51Q';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/mapbox/dark-v11',
+            center: [91.8310, 22.3404], // Center the map at San Juan, Puerto Rico.
+            zoom: 15
+        });
+
+        const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            flyTo: {
+                bearing: 0,
+                // Control the flight curve, making it move slowly and
+                // zoom out almost completely before starting to pan.
+                speed: 0.2, // Make the flying slow.
+                curve: 1, // Change the speed at which it zooms out.
+                // This can be any easing function: it takes a number between
+                // 0 and 1 and returns another number between 0 and 1.
+                easing: function (t) {
+                    return t;
+                }
+            },
+            mapboxgl: mapboxgl,
+        });
+        const marker1 = new mapboxgl.Marker().setLngLat([91.8310, 22.3404]).addTo(map);
+
+        // Add the geocoder to the map/
+        map.addControl(geocoder);
     </script>
 
 

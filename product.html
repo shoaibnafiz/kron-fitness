@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kron Fitness - Blogs</title>
+    <title>Kron Fitness - Product</title>
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <!-- Font awesome -->
@@ -13,9 +13,10 @@
 
 
 <body>
-    <section class="bg-[#ced2da] relative">
-        <!-- <img class="h-full w-full object-cover absolute z-[-10] opacity-25"
-            src="https://i.ibb.co/cg7qX1f/victor-freitas-Wv-DYd-XDzkhs-unsplash-1.jpg" alt=""> -->
+
+    <section class="relative">
+        <img class="w-full h-full object-cover absolute z-[-10] opacity-25"
+            src="https://i.ibb.co/cg7qX1f/victor-freitas-Wv-DYd-XDzkhs-unsplash-1.jpg" alt="">
 
         <header class="relative">
             <div class="container md:w-10/12 lg:w-9/12 lg:mx-auto pt-3">
@@ -87,108 +88,78 @@
             </div>
         </header>
 
+        <section class="relative">
+            <div class="container md:w-10/12 lg:w-9/12 mx-auto h-[160px] md:h-[300px] flex flex-col justify-center">
+                <div class="ms-10 md:ms-0">
+                    <p class="text-2xl md:text-3xl font-bold text-gray-950">SHOP</p>
+                    <p class="text-4xl md:text-6xl font-bold text-gray-950 mb-5">PRODUCT</p>
+                    <span class="text-gray-950">Home / <a class="text-blue-800" href="shop.html">Shop</a> / <a
+                            class="text-blue-800" href="product.html">Product</a></span>
+                </div>
+                <div class="flex justify-center">
+                    <hr class="w-10/12 md:w-full h-px bg-gray-950 border-0 mt-5">
+                </div>
+            </div>
+        </section>
     </section>
 
     <main>
 
-        <!-- You need to Know Section -->
-        <section class="bg-[#ced2da]">
+        <!-- Product Detail -->
+        <section class="">
             <div class="container w-10/12 mx-auto py-20 lg:py-32">
                 <div class="md:flex md:items-center">
                     <div class="md:w-2/5">
-                        <img src="https://i.ibb.co/0BLR202/wepik-export-20230717000208-Yds-F.png" alt="">
+                        <img src="https://i.ibb.co/hf4St2t/sveltus-double-ab-wheel-orange-x2-org-0.jpg" alt="">
                     </div>
                     <div class="md:w-3/5 md:ps-20 mt-10">
-                        <p class="my-5 text-[#303b6d]">December 18, 2021 <i
-                                class="fa-regular fa-circle fa-2xs mx-5"></i>
-                            Fitness</p>
-                        <h1 class="lg:mt-5 font-bold text-4xl lg:text-6xl text-gray-950">EVERYTHING YOU</h1>
-                        <h1 class="lg:mt-5 font-bold text-4xl lg:text-6xl text-gray-950">NEED TO KNOW</h1>
+                        <h1 class="lg:mt-5 font-bold text-4xl lg:text-6xl text-gray-950">ADJUSTABLE</h1>
+                        <h1 class="lg:mt-5 font-bold text-4xl lg:text-6xl text-gray-950">10KG</h1>
+                        <p class="text-gray-950 mt-10 mb-5">$<span>100.00</span></p>
                         <div class="lg:w-3/4">
-                            <h2 class="mt-10 text-gray-950">When in doubt what to buy as a gift, this is the best
+                            <p class="text-gray-950">When in doubt what to buy as a gift, this is the best
                                 option. Our gift cards have no expiration date and can be used to pay for all the
                                 service in our beauty studio or in our cosmetic shop. Amount is flexible and you can
-                                personalize your gift card with a message.</h2>
+                                personalize your gift card with a message.</p>
                         </div>
-                        <a
-                            class="btn border-2 border-[#303b6d] text-white bg-[#303b6d] rounded-none  hover:text-[#303b6d] hover:bg-transparent hover:border-[#303b6d] px-10 mt-10">LEARN
-                            MORE</a>
+                        <div class="my-5 flex flex-col items-center lg:flex-row">
+                            <div class="quantity mb-5 lg:mb-0 lg:me-2">
+                                <div class="quantity-input join">
+                                    <a class="btn btn-reduce text-gray-950 bg-white join-item" href="#"><i
+                                            class="fa-solid fa-minus"></i></a>
+
+                                    <input class="text-gray-950 bg-white w-[50px] border border-black join-item"
+                                        type="text" name="product-quatity" value="1" data-max="120" pattern="[0-9]*">
+
+                                    <a class="btn btn-increase text-gray-950 bg-white join-item" href="#"><i
+                                            class="fa-solid fa-plus"></i></a>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <a
+                                    class="btn border-2 border-[#303b6d] text-[#303b6d] bg-white rounded-none  hover:text-white hover:bg-[#303b6d] hover:border-[#303b6d] px-10 me-2">ADD
+                                    TO CART</a>
+                                <a
+                                    class="btn border-2 border-[#303b6d] text-white bg-[#303b6d] rounded-none  hover:text-[#303b6d] hover:bg-transparent hover:border-[#303b6d] px-10">BUY
+                                    NOW</a>
+                            </div>
+                        </div>
+                        <div class="lg:w-3/4">
+                            <h4 class="my-5 font-bold text-gray-950">DESCRIPTION</h4>
+                            <p class="text-gray-950">When in doubt what to buy as a gift, this is the best
+                                option. Our gift cards have no expiration date and can be used to pay for all the
+                                service in our beauty studio or in our cosmetic shop. Amount is flexible and you can
+                                personalize your gift card with a message.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Blog Sections -->
+        <!-- Reviews Section -->
         <section>
             <div class="container w-10/12 mx-auto py-20">
-                <p class="text-gray-950 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fugiat
-                    iusto
-                    optio eum delectus, cupiditate ducimus quos quae quod aliquam tempore. Quis dolorem a tempore
-                    asperiores hic porro culpa nihil earum blanditiis unde beatae voluptatum, doloremque odit nam
-                    dolores omnis dolor non laborum, magni dolore eos quasi atque. Suscipit aliquid et similique quod
-                    laboriosam minima magnam odio qui quisquam repellat? Rem enim iste repellendus quis quae,
-                    perferendis ad laboriosam eum ipsum! Deserunt, tempore vero praesentium eum provident reprehenderit,
-                    veritatis inventore illum accusantium voluptates soluta debitis reiciendis optio, delectus libero
-                    maiores eveniet expedita maxime necessitatibus at similique vel quas voluptatem iste.</p>
-                <img class="lg:h-[600px] lg:w-full"
-                    src="https://i.ibb.co/BjzR2K4/young-fit-couple-looking-at-each-other-while-doing-push-ups-in-gym-together-photo.jpg"
-                    alt="">
-                <p class="text-gray-950 mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officiis
-                    dolores molestias magnam. Ipsum sapiente autem perspiciatis quae vitae omnis enim sunt consequatur.
-                    Architecto, maiores eveniet aut corrupti, sunt amet vel id tenetur cupiditate, laudantium sed.
-                    Officia cumque quisquam facere minima. Explicabo laborum fugit eos culpa autem consequuntur facilis,
-                    expedita molestias dolore distinctio iure aliquid quas illum unde voluptates exercitationem eaque
-                    earum quo atque? Eligendi tenetur excepturi suscipit ipsum odio mollitia. Expedita a eos fuga
-                    dignissimos aut, tenetur ipsam impedit voluptatibus distinctio officia accusamus, pariatur qui
-                    veritatis et ducimus hic ipsa corrupti officiis iusto rerum mollitia blanditiis repellendus
-                    molestias! Illo!</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-10">
-                    <img class="object-cover h-[250px] lg:h-[500px] w-full lg:w-[650px]"
-                        src="https://i.ibb.co/K7Y19tW/confident-young-muscular-caucasian-athlete-practicing-gym-with-weights-male-model-doing-strength-exe.jpg"
-                        alt="">
-                    <img class="object-cover h-[250px] lg:h-[500px] w-full lg:w-[650px]"
-                        src="https://i.ibb.co/rv1tkKW/71oqw-Pp-TOYL-AC-SX679.jpg" alt="">
-                </div>
-                <p class="text-gray-950 mt-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum officiis
-                    dolores molestias magnam. Ipsum sapiente autem perspiciatis quae vitae omnis enim sunt consequatur.
-                    Architecto, maiores eveniet aut corrupti, sunt amet vel id tenetur cupiditate, laudantium sed.
-                    Officia cumque quisquam facere minima. Explicabo laborum fugit eos culpa autem consequuntur facilis,
-                    expedita molestias dolore distinctio iure aliquid quas illum unde voluptates exercitationem eaque
-                    earum quo atque? Eligendi tenetur excepturi suscipit ipsum odio mollitia. Expedita a eos fuga
-                    dignissimos aut, tenetur ipsam impedit voluptatibus distinctio officia accusamus, pariatur qui
-                    veritatis et ducimus hic ipsa corrupti officiis iusto rerum mollitia blanditiis repellendus
-                    molestias! Illo!</p>
-                <div class="flex flex-col md:flex-row md:justify-between text-gray-950 mt-10">
-                    <div class="order-last md:order-first justify-between">
-                        <label class="me-5">Tags: </label>
-                        <button class="btn btn-sm btn-outline rounded rounded-0 text-gray-950">FITNESS</button>
-                        <button class="btn btn-sm btn-outline rounded rounded-0 text-gray-950">WORKOUT</button>
-                        <button class="btn btn-sm btn-outline rounded rounded-0 text-gray-950">SPORT</button>
-                    </div>
-                    <div class="justify-between mb-5">
-                        <button class="ms-3">
-                            <i class="fa-solid fa-share-nodes"></i>
-                            Share
-                        </button>
-                        <button class="ms-3">
-                            <!-- <i class="fa-solid fa-thumbs-up"></i> -->
-                            <i class="fa-regular fa-heart"></i>
-                            Like
-                        </button>
-                        <button class="ms-3">
-                            <i class="fa-regular fa-comment"></i>
-                            <label>2</label>
-                            Comments
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Comments Section -->
-        <section>
-            <div class="container w-10/12 mx-auto py-20">
-                <h4 class="text-2xl font-bold text-gray-950 mb-10">Comment</h4>
+                <h4 class="text-2xl font-bold text-gray-950 mb-10">REVIEWS</h4>
                 <div class="flex justify-between">
                     <div>
                         <img class="rounded-full h-10 w-20"
@@ -275,13 +246,17 @@
             </div>
         </section>
 
-        <!-- Leave Comment -->
+        <!-- Leave Review -->
         <section>
             <div class="container w-10/12 mx-auto py-20">
-                <h4 class="text-2xl font-bold text-gray-950 mb-5">LEAVE A REPLY</h4>
-                <p class="text-gray-950 mb-10">Your Email Address will not be published. Required fields are marked.
-                    <span class="text-rose-600">*</span>
-                </p>
+                <h4 class="text-2xl font-bold text-gray-950 mb-5">YOUR RATING <span class="text-rose-600">*</span></h4>
+                <div class="flex gap-2 md:text-2xl mt-5 mb-10 text-gray-950">
+                    <div class="text-[#303b6d]"><i class="fa-solid fa-star"></i></div>
+                    <div class="text-[#303b6d]"><i class="fa-solid fa-star"></i></div>
+                    <div class="text-[#303b6d]"><i class="fa-solid fa-star"></i></div>
+                    <div class="text-[#303b6d]"><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                </div>
                 <div class="flex flex-col md:flex-row md:justify-between">
                     <input
                         class="text-gray-950 input border-black rounded rounded-none bg-white md:w-5/12 mb-10 md:mb-0"
@@ -296,6 +271,71 @@
                 <a
                     class="btn border-2 border-[#303b6d] text-white bg-[#303b6d] rounded-none  hover:text-white hover:bg-[#5164b9] hover:border-[#5164b9] px-10 mt-10">SUBMIT
                     COMMENT</a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container w-10/12 mx-auto py-20">
+                <h1 class="text-xl md:text-3xl lg:text-6xl font-bold text-gray-950">YOU MAY LIKE</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-10 lg:py-10">
+                    <a href="product.html" class="flex flex-col items-center">
+                        <img class="h-[450px] w-full" src="https://i.ibb.co/8N67hqQ/613-1.png" alt="">
+                        <h2 class="font-bold mt-5 text-2xl text-gray-950">SET OF ACCESSORIES
+                        </h2>
+                        <p class="my-5 text-[#303b6d]"><del class="text-[#D70037]">$30.00</del> <i
+                                class="fa-regular fa-circle fa-2xs mx-5"></i>
+                            $25.00</p>
+                    </a>
+                    <a href="product.html" class="flex flex-col items-center">
+                        <img class="h-[450px] w-full" src="https://i.ibb.co/wz5QhrS/sveltus-speed-rope-jump-rope-2.webp"
+                            alt="">
+                        <h2 class="font-bold mt-5 text-2xl text-gray-950">SET OF ACCESSORIES
+                        </h2>
+                        <p class="my-5 text-[#303b6d]"><del class="text-[#D70037]">$30.00</del> <i
+                                class="fa-regular fa-circle fa-2xs mx-5"></i>
+                            $25.00</p>
+                    </a>
+                    <a href="product.html" class="flex flex-col items-center">
+                        <img class="h-[450px] w-full"
+                            src="https://i.ibb.co/q01DmnL/91603-3-Sveltus-Multi-Elastiband-Black-15-kg.jpg" alt="">
+                        <h2 class="font-bold mt-5 text-2xl text-gray-950">SET OF ACCESSORIES
+                        </h2>
+                        <p class="my-5 text-[#303b6d]"><del class="text-[#D70037]">$30.00</del> <i
+                                class="fa-regular fa-circle fa-2xs mx-5"></i>
+                            $25.00</p>
+                    </a>
+                    <a href="product.html" class="hidden md:block lg:hidden flex flex-col items-center">
+                        <img class="h-[450px] w-full"
+                            src="https://i.ibb.co/hf4St2t/sveltus-double-ab-wheel-orange-x2-org-0.jpg" alt="">
+                        <h2 class="font-bold mt-5 text-2xl text-gray-950">SET OF ACCESSORIES
+                        </h2>
+                        <p class="my-5 text-[#303b6d]"><del class="text-[#D70037]">$30.00</del> <i
+                                class="fa-regular fa-circle fa-2xs mx-5"></i>
+                            $25.00</p>
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <a href="shop.html"
+                        class="btn border-2 border-[#303b6d] text-white bg-[#303b6d] rounded-none  hover:text-white hover:bg-[#5164b9] hover:border-[#5164b9]">GO
+                        TO STORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-black">
+            <div class="container w-10/12 mx-auto py-20 lg:py-32">
+                <h1 class="text-xl md:text-3xl lg:text-6xl font-bold text-white">BOOK A TOUR</h1>
+                <p class="text-white my-5">Structured powered practice that focuses on mastery of poses and
+                    progression to
+                    more advanced levels.</p>
+                <div class="flex">
+                    <a
+                        class="btn border-2 border-[#303b6d] text-white bg-[#303b6d] rounded-none  hover:text-white hover:bg-[#5164b9] hover:border-[#5164b9] join-item">BOOK
+                        TOUR</a>
+                    <input
+                        class="text-gray-950 border-1 border-black input input-bordered rounded-none join-item bg-white w-full"
+                        placeholder="Enter Your Email Address" />
+                </div>
             </div>
         </section>
 
